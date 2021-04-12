@@ -1,0 +1,14 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<metacharset="UTF-8" >
+    <title>Spring Security SAML Example</title>
+</head>
+<body>
+<h1>Logged in as <span style="font-weight:bold" th:text="${username}"></span></h1>
+<h2>This is Service Provider 1 !!</h2>
+	  <p th:text="'First Name: ' + ${firstname}" />
+      <p th:text="'User: ' + ${user}" />  
+      <p th:text="'Last Name: ' + ${lastname}" /> 
+      <a th:href="@{https://localhost:7342/}"> SSO Login Service Provider 2 </a>
+</body>
+</html>
